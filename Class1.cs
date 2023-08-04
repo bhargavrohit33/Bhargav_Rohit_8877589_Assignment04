@@ -58,7 +58,7 @@ namespace Bhargav_Rohit_8877589_Assignment04
 
             driver.FindElement(By.Id("age")).Click();
             driver.FindElement(By.Id("age")).SendKeys("25");
-            driver.FindElement(By.Id("experience")).Click();
+            driver.FindElement(By.Id("experience")).Click(); 
             driver.FindElement(By.Id("experience")).SendKeys("3");
             driver.FindElement(By.CssSelector(".card-body > .form-group:nth-child(3)")).Click();
             driver.FindElement(By.Id("accidents")).Click();
@@ -72,6 +72,8 @@ namespace Bhargav_Rohit_8877589_Assignment04
             }
         }
 
+
+      
         [Test]
         public void insuranceQuote02ValidDataAge25DrivingExp3Accidents2()
         {
@@ -499,6 +501,8 @@ namespace Bhargav_Rohit_8877589_Assignment04
         }
 
         [Test]
+
+
         public void insuranceQuote15Age18DrivingExp30Accidents0()
         {
             driver.Navigate().GoToUrl("http://localhost/prog8170a04/");
